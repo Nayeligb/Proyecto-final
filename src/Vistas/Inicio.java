@@ -70,6 +70,11 @@ public class Inicio extends javax.swing.JFrame {
         btnCerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnCerrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cerrar32.png"))); // NOI18N
         btnCerrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cerrar38.png"))); // NOI18N
+        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 80, 60));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/thumb2-blue-pink-paper-background-pink-paper-texture-creative-background-paper-backgrounds.jpg"))); // NOI18N
@@ -89,6 +94,12 @@ public class Inicio extends javax.swing.JFrame {
          form.setVisible(true);
          this.dispose();
     }//GEN-LAST:event_btnGestionProducActionPerformed
+
+    private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
+        Login form=new Login();
+         form.setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_btnCerrarActionPerformed
 
     /**
      * @param args the command line arguments
